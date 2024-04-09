@@ -5,6 +5,7 @@ This is a firmware for a NRF51822 based beacon creating a DIY AirTag.
 The code is based on
 
 https://github.com/acalatrava/openhaystack-firmware.git
+
 https://github.com/dakhnod/FakeTag.git
 
 The firmware support sending the battery level through the status byte. The onboard switch (can be replaced by a vibration sensor) increases a counter in the status field.
@@ -42,5 +43,10 @@ export NRF_MODEL=nrf51; make build
 export NRF_MODEL=nrf51; export ADV_KEY_BASE64=<YOUR BASE64 ADV KEY GOES HERE>; make patch
 ```
 
+###Disclaimer
+
+Links were verified at time of adding them to this README. The author of this project is not responsible for the validity, accuracy, currency or legality of content of the external links contained by this project.
+
+The information contained by this project is for informational purposes only and is not intended to be suitable for any professional need.  
 
 
