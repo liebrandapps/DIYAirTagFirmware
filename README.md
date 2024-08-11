@@ -26,11 +26,11 @@ git submodule update
 You will require a cross compiler for the nrf51822. Below commands for a Raspberry Pi running Raspbian. 
 
 ```bash
-wget https://nsscprodmedia.blob.core.windows.net/prod/software-and-other-downloads/desktop-software/nrf-command-line-tools/sw/versions-10-x-x/10-24-0/nrf-command-line-tools_10.24.0_amd64.deb
+wget https://nsscprodmedia.blob.core.windows.net/prod/software-and-other-downloads/desktop-software/nrf-command-line-tools/sw/versions-10-x-x/10-24-0/nrf-command-line-tools_10.24.0_arm64.deb
 
 dpkg -i nrf-command-line-tools_10.24.0_amd64.deb
 
-apt install gcc-arm-none-eab
+apt install gcc-arm-none-eabi
 ```
 
 ## Building
