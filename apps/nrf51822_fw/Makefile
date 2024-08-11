@@ -23,7 +23,7 @@ SHELL:=/bin/bash
 
 ADV_KEY_BASE64 ?=
 BOARD ?= BOARD_SIMPLE
-NEW_ADV_KEY_HEX := $(if $(ADV_KEY_BASE64),$(shell base64 -D <<< $(ADV_KEY_BASE64) | xxd -p),)
+NEW_ADV_KEY_HEX := $(if $(ADV_KEY_BASE64),$(shell base64 -d <<< $(ADV_KEY_BASE64) | xxd -p),)
 
 # Compile for nrf52 by default, use "NRF_MODEL=nrf51 make" to compile for nrf51 platform
 ifeq ($(NRF_MODEL), nrf51)
