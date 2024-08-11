@@ -35,7 +35,7 @@ apt install gcc-arm-none-eabi
 
 ## Building
 
-Go to the apps folder
+Go to the apps folder (apps/nrf51822_fw)
 
 ```bash
 export NRF_MODEL=nrf51; make build
