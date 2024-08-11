@@ -30,7 +30,7 @@ wget https://nsscprodmedia.blob.core.windows.net/prod/software-and-other-downloa
 
 dpkg -i nrf-command-line-tools_10.24.0_amd64.deb
 
-apt install gcc-arm-none-eabi
+apt install gcc-arm-none-eabi xxd
 ```
 
 ## Building
